@@ -1,0 +1,29 @@
+/* 초기 레이아웃은 제공됨. TODO Q2: CSS를 이용한 스타일 보완 */
+body {
+    background-color: #f5f7fb;
+    color: #263249;
+}
+
+
+.panel {
+    background-color: white;
+    padding: 14px;
+
+    font-size: large;
+    color: rgb(88, 17, 80);
+    border-style: dotted;
+}
+
+/* TODO Q2-B */
+
+
+
+/* TODO Q2-C */
+
+
+
+
+#message {
+    min-height: 1.5rem;
+    margin-top: 8px;
+}
