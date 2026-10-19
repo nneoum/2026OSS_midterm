@@ -41,7 +41,33 @@ function render(list = items) {
 
 }
 
+// 캠퍼스 분실물 관리: 배열이 저장소 역할 (서버/DB 없음)
+/* 
+let items = [
+ { id: 1, name: "파란 우산", place: "도서관", foundDate: "2026-10-12", returned: false },
+  { id: 2, name: "학생증", place: "학생회관", foundDate: "2026-10-13", returned: true },
+  { id: 3, name: "보조배터리", place: "강의동", foundDate: "2026-10-14", returned: false }
+];
+let nextId = 4;
+*/
+
 // TODO Q3-B: #itemForm 의 submit 이벤트 리스너 작성
+
+const td=document.querySelector("td");
+
+form.addEventListener("submit",function(e){
+  e.preventDefault();
+
+  items.push({
+    id:nextId,
+    name: itemname.value.trim(),
+    place: itemplace.value,
+    foundDate: itemfoundDate.value
+  })
+
+  nextId++;
+
+})
 // - 기본 제출 막기, 필수값 확인, 새 항목 생성 후 배열 추가
 // - 등록 성공 시 reset(), render(), message 텍스트 출력
 
